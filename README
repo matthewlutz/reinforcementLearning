@@ -1,0 +1,24 @@
+
+To compile the program, navigate to the directory containing Main.java and run:
+
+To run the program, use the following command:
+
+java Main -f <FILENAME> -T <TRIALS> -a <LEARNING_RATE> -g <DISCOUNT_RATE> -e <EPSILON> -na <LEARNING_DECAY> -ne <EPSILON_DECAY> -p -v <VERBOSITY> -q
+
+Command-Line Arguments
+Required Arguments
+-f <FILENAME>: Specifies the file containing the grid environment (required).
+Optional Arguments
+-T <TRIALS>: Sets the number of learning episodes (default: 1000).
+-a <LEARNING_RATE>: Specifies the initial learning rate for temporal difference updates (default: 0.9).
+-g <DISCOUNT_RATE>: Sets the discount factor for future rewards (default: 0.9).
+-e <EPSILON>: Specifies the initial randomness for the ε-greedy policy (default: 0.9).
+-na <LEARNING_DECAY>: Sets the decay rate for the learning rate (default: 100).
+-ne <EPSILON_DECAY>: Sets the decay rate for ε-greedy randomness (default: 50).
+-p: Enables detailed output of the learned policy.
+-q: Toggles Q-Learning (off-policy) instead of SARSA (on-policy).
+-v <VERBOSITY>: Sets the verbosity level for program output (default: 1).
+
+
+NOT WORKING
+Everything works pretty decent until the q-flag is turned on. Can't tell exactly why. Also sometimes the first move out of the start state is out of bounds
